@@ -97,7 +97,7 @@ col3, col4 = st.columns(2)
 with col3:
     #st.markdown('<p class="font"><em>Neural Network</em> <br> Design</p>', unsafe_allow_html=True)
     #st.markdown('<div class="blue-line"></div>', unsafe_allow_html=True)
-    st.image('nndesign-demo-master/nndesigndemos/Logo/Figure.jpg', use_column_width=True)
+    st.image('Logo/Figure.jpg', use_column_width=True)
     st.markdown('<button class="custom-button">Neural Network Design</button>', unsafe_allow_html=True)
 
     st.markdown("""
@@ -114,7 +114,7 @@ with col3:
 with col4:
     #st.markdown('<p class="font"><em>Neural Network</em> <br> Design: Deep Learning</p>', unsafe_allow_html=True)
     #st.markdown('<div class="blue-line"></div>', unsafe_allow_html=True)
-    st.image('nndesign-demo-master/nndesigndemos/Logo/Figure_DL.jpg', use_column_width=True)
+    st.image('Logo/Figure_DL.jpg', use_column_width=True)
     st.markdown('<button class="custom-button2">Neural Network Design: Deep Learning</button>', unsafe_allow_html=True)
     st.markdown("""
         <div class="content-font">Click on the above to access the demonstrations for the Neural Network Design: Deep Learning book.

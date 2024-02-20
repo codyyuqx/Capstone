@@ -2,6 +2,8 @@ import streamlit as st
 import Landingpage  # Assuming this is your landing page script
 import NND_Page# Assuming this is another page script
 from Book1.Chapter2 import One_input_neuron
+from Book1.Chapter2 import Two_input_neuron
+
 
 # Initialize session state for page navigation
 if 'page' not in st.session_state:
@@ -13,8 +15,11 @@ def load_page(page_name):
         Landingpage.run()
     elif page_name == 'nnd':
         NND_Page.run()
-    elif page_name == "One_input_neuron":# Ensure the value matches exactly what's set in the session state
+    elif page_name == "One_input_neuron":
         One_input_neuron.run()
+    elif page_name == "Two_input_neuron":
+        Two_input_neuron.run()
+        
 
     # Add more pages as elif blocks here
 

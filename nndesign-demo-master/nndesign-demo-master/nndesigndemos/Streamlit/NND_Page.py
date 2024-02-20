@@ -2,7 +2,11 @@ import streamlit as st
 import base64
 import os
 
+
 def run():
+    # Set the layout to "wide"
+    st.set_page_config(layout="wide")
+    
     def load_svg(svg_file):
         with open(svg_file, "r", encoding="utf-8") as f:
             svg = f.read()
@@ -15,6 +19,13 @@ def run():
         </div>
         '''
         return svg_html
+    def load_css(file_name="../css/nnd.css"):
+        with open(file_name) as f:
+            css_file = f'<style>{f.read()}</style>'
+        return css_file
+
+    css = load_css()
+    st.markdown(css, unsafe_allow_html=True)
 
     # Function to create a dropdown selector with class 'content-font'
     def create_chapter_demo_selector(chapter_name, options):
@@ -27,76 +38,12 @@ def run():
         if demo_option == 'One-Input Neuron':
             st.session_state.page = 'One_input_neuron'
 
-
-    # Set the layout to "wide"
-    st.set_page_config(layout="wide")
-
-    if st.button('Back to Landing Page'):
+    if st.button('Back to Home Page'):
         st.session_state.page = 'landing'
         st.experimental_rerun()
 
     # Define the relative path for the images using a raw string
-    image_path = r"D:\nndesign-demo-master\nndesign-demo-master\nndesigndemos\Logo\book_logos"
-
-    st.markdown("""
-    <style>
-    .streamlit-container {
-        max-width: 95%;
-    }
-    .font {
-        font-size: 28px !important;
-        font-family: 'Times New Roman', Times, serif !important;
-    }
-    .header {
-        text-align: right;
-        font-size: 28px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    .title-line {
-        display: inline-block; /* or 'inline-block' depending on your layout needs */
-        margin-bottom: 5px; /* Adjust the bottom margin to control line spacing */
-    }
-    .content-font {
-        font-size: 18px !important;
-        font-family: 'Times New Roman', Times, serif !important;
-    }
-
-    .blue-line {
-        height: 4px;
-        background-color: darkblue;
-        margin: 0px 0;
-    }
-    .footer {
-        text-align: right;
-        font-size: 18px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    .space-top {
-        margin-top: 50px;
-    }
-    .selectbox-option {
-        font-size: 18px !important;
-        font-family: 'Times New Roman', Times, serif !important;
-    }
-    .stButton>button {
-        font-size: 18px !important;
-        font-family: 'Times New Roman', Times, serif !important;
-        color: black !important; /* Text color */
-        background-color: white !important; /* Background color */
-        border: 1px solid black !important; /* Black border color and width */
-        border-radius: 0.3rem !important;
-        line-height: 1.5 !important;
-        width: 100% !important; /* Make buttons use the full width of the column */
-        transition: background-color 0.3s !important; /* Smooth transition for background color */
-    }
-
-    /* Custom CSS for button hover state */
-    .stButton>button:hover {
-        background-color: lightblue !important; /* Light blue background color on hover */
-    }
-    </style>
-    """, unsafe_allow_html=True)
+    image_path = r"../Logo/book_logos"
 
     # Title and subtitle
     col1, col2 = st.columns(2)
