@@ -26,7 +26,8 @@ def run():
         )
         if demo_option == 'One-Input Neuron':
             st.session_state.page = 'One_input_neuron'
-
+        elif demo_option == 'Two-input Neuron':
+            st.session_state.page = 'Two_input_neuron'
 
     # Set the layout to "wide"
     st.set_page_config(layout="wide")
@@ -144,6 +145,8 @@ def run():
             create_chapter_demo_selector("Chapter 5", ['Gram Schmidt', 'Reciprocal Basis'])
 
         if st.session_state.page == 'One_input_neuron':
+            st.experimental_rerun()
+        elif st.session_state.page == 'Two_input_neuron':
             st.experimental_rerun()
 
 

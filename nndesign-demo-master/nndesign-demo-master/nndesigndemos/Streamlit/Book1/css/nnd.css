@@ -1,0 +1,79 @@
+.streamlit-container {
+    max-width: 95%;
+}
+.font {
+    font-size: 28px !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+.header {
+    text-align: right;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.title-line {
+    display: inline-block; /* or 'inline-block' depending on your layout needs */
+    margin-bottom: 5px; /* Adjust the bottom margin to control line spacing */
+}
+img {
+    max-width:2rem;
+    height: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-font {
+    font-size: 18px !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.blue-line {
+    height: 4px;
+    background-color: darkblue;
+    margin: 0px 0;
+}
+.footer {
+    text-align: right;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.space-top {
+    margin-top: 50px;
+}
+.selectbox-option {
+    font-size: 18px !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+    .stButton>button {
+    font-size: 18px !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    color: black !important; /* Text color */
+    background-color: white !important; /* Background color */
+    border: 1px solid black !important; /* Black border color and width */
+    border-radius: 0.3rem !important;
+    line-height: 1.5 !important;
+    width: 100% !important; /* Make buttons use the full width of the column */
+    transition: background-color 0.3s !important; /* Smooth transition for background color */
+    }
+
+/* Custom CSS for button hover state */
+.stButton>button:hover {
+    background-color: lightblue !important; /* Light blue background color on hover */
+}
+
+    .vertical-line {
+                border-left: 4px solid darkblue;
+                height: 800px;
+            }
+
+ .stSlider .rc-slider-handle {
+                border: 2px solid darkblue !important;  /* Handle border color */
+                background-color: darkblue !important;  /* Handle background color */
+            }
+            /* Additional styling for the handle on hover and focus, if needed */
+            .stSlider .rc-slider-handle:hover,
+            .stSlider .rc-slider-handle:focus {
+                border-color: darkblue !important;
+                box-shadow: none !important;
+            }
