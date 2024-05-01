@@ -1,0 +1,33 @@
+hr {
+    border-bottom: 7px solid #013fbb;
+}
+.st-emotion-cache-1n76uvr{
+    gap: 1rem;
+}
+.content-font {
+    font-size: 18px !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+h3{
+    padding: 0px;
+}
+[data-testid="baseButton-secondary"]{
+    border: none;
+    background-color: #0097d2;
+    color: white;
+    border-radius: 0px;
+}
+[data-testid="baseButton-secondary"]:focus:not(:active){
+    box-shadow: none;
+    background-color: #0097d2;
+    color: white;
+}
+[data-testid="baseButton-secondary"]:hover{
+    background-color: #0097d2;
+    color: white;
+}
+[data-testid="baseButton-secondary"]:active{
+    background-color: #57cdff;
+    color: white;
+    box-shadow: none;
+}

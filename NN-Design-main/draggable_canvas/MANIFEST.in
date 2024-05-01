@@ -1,0 +1,3 @@
+recursive-include src/draggable_canvas/frontend *
+include README.md
+include LICENSE
